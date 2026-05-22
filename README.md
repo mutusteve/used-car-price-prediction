@@ -26,7 +26,6 @@ Indian Rupees (Lakhs) given its key attributes.
 | Random Forest | TBD | TBD |
 | XGBoost | TBD | TBD |
 
-> Results will be updated after model training (Step 11).
 
 ---
 
