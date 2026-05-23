@@ -1,0 +1,4 @@
+Model,R²,RMSE_log,MAE_log,RMSE_Lakhs,MAE_Lakhs,Train_time_s
+Linear Regression,0.9745,0.1468,0.1257,1.71,0.9209,0.058
+Random Forest,0.9067,0.2806,0.1712,4.6966,1.7263,0.412
+XGBoost,0.9424,0.2205,0.114,4.0078,1.2204,0.239
