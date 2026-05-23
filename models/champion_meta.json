@@ -1,0 +1,16 @@
+{
+  "champion_name": "Ridge Regression",
+  "test_r2": 0.9745,
+  "test_rmse_lakhs": 1.7101,
+  "needs_scaling": true,
+  "features": [
+    "Present_Price_log",
+    "Car_Age",
+    "Kms_Driven_log",
+    "Fuel_Diesel",
+    "Fuel_Petrol",
+    "Transmission_enc",
+    "Seller_Type_enc",
+    "Owner"
+  ]
+}
