@@ -20,11 +20,11 @@ Indian Rupees (Lakhs) given its key attributes.
 
 ## Key Results
 
-| Model | R² Score | RMSE (Lakhs) |
-|---|---|---|
-| Linear Regression | TBD | TBD |
-| Random Forest | TBD | TBD |
-| XGBoost | TBD | TBD |
+| Model | R² Score | RMSE (Lakhs) | MAE (Lakhs) |
+|---|---|---|---|
+| **Linear Regression** | **0.9745** | **₹1.71** | **₹0.92** |
+| XGBoost | 0.9424 | ₹4.01 | ₹1.22 |
+| Random Forest | 0.9067 | ₹4.70 | ₹1.73 |
 
 
 ---
