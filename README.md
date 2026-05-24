@@ -29,13 +29,15 @@ Indian Rupees (Lakhs) given its key attributes.
 
 ---
 
-## Project Structure
+````markdown
+# Project Structure
 
+```text
 used_car_price_prediction/
 │
 ├── data/
-│   ├── raw/                  ← original dataset (not tracked by git)
-│   └── processed/            ← cleaned and engineered features
+│   ├── raw/                         ← original dataset (not tracked by git)
+│   └── processed/                   ← cleaned and engineered features
 │
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb
@@ -44,12 +46,18 @@ used_car_price_prediction/
 │   ├── 04_feature_engineering.ipynb
 │   └── 05_feature_selection_and_split.ipynb
 │
-├── models/                   ← saved model files (.pkl)
-├── app/                      ← Streamlit prediction app
-├── requirements.txt          ← Python dependencies
+├── models/                          ← saved model files (.pkl)
+│
+├── app/                             ← Streamlit prediction app
+│
+├── requirements.txt                 ← Python dependencies
+│
 └── README.md
+````
 
----
+```
+```
+
 
 ## Workflow
 
