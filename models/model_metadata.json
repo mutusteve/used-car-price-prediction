@@ -1,0 +1,92 @@
+{
+  "project": "Used Car Price Prediction",
+  "version": "1.0.0",
+  "timestamp": "20260524_201309",
+  "champion_name": "Ridge Regression",
+  "model_type": "Ridge",
+  "needs_scaling": true,
+  "performance": {
+    "test_r2": 0.9443,
+    "test_rmse_lakhs": 1.7107,
+    "test_mae_lakhs": 0.9212
+  },
+  "features": {
+    "input_columns": [
+      "Present_Price_log",
+      "Car_Age",
+      "Kms_Driven_log",
+      "Fuel_Diesel",
+      "Fuel_Petrol",
+      "Transmission_enc",
+      "Seller_Type_enc",
+      "Owner"
+    ],
+    "n_features": 8,
+    "target": "Selling_Price_log",
+    "target_transform": "np.log1p(Selling_Price)",
+    "reverse_transform": "np.expm1(prediction)"
+  },
+  "preprocessing": {
+    "log_transformed": [
+      "Present_Price",
+      "Kms_Driven"
+    ],
+    "label_encoded": [
+      "Seller_Type",
+      "Transmission"
+    ],
+    "one_hot_encoded": [
+      "Fuel_Type"
+    ],
+    "engineered": [
+      "Car_Age = current_year - Year"
+    ],
+    "dropped": [
+      "Car_Name",
+      "Year"
+    ]
+  },
+  "valid_inputs": {
+    "fuel_type": [
+      "Petrol",
+      "Diesel",
+      "CNG"
+    ],
+    "seller_type": [
+      "Dealer",
+      "Individual"
+    ],
+    "transmission": [
+      "Manual",
+      "Automatic"
+    ],
+    "owner": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "year_range": [
+      2000,
+      2024
+    ],
+    "present_price_range_lakhs": [
+      0.5,
+      100.0
+    ],
+    "kms_driven_range": [
+      100,
+      500000
+    ]
+  },
+  "files": {
+    "champion_model": "models/champion_model.pkl",
+    "scaler": "models/scaler.pkl",
+    "feature_columns": "models/feature_columns.pkl",
+    "pipeline": "models/predict_pipeline.pkl",
+    "metadata": "models/model_metadata.json"
+  },
+  "integrity": {
+    "model_md5": "1941501a4ccb1241463c9f2aaae4abed"
+  }
+}
